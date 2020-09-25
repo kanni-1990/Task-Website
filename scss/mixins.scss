@@ -1,0 +1,23 @@
+// Transition
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  transition:         $transition;
+}
+
+@mixin for-desktop-up {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin for-tablet-up {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin for-mobiles {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}

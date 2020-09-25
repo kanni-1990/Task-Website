@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+		<!-- custom styles -->
+    	<link rel="stylesheet" href="css/main.css">
+
+    	<!-- font embed CSS -->
+		<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+		 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="/css/all.min.css"> -->
+		<title>Task</title>
+
+	</head>
+	<body>
+		<div class="main-wrapper">
+			<!-- MAIN NAV STARTS HERE -->
+			<header>
+				<div class="nav-top">
+					<div class="top-menu">
+						<ul>
+							<li class="active"><a href="#" >bliss</a></li>
+							<li><a href="#" >marketplace</a></li>
+							<li><a href="#">classifieds</a></li>
+						</ul>
+					</div>
+					<div class="select-options">
+						<select id="mounth" class="domestic">
+						    <option value="domestic">Domestic </option>
+						    <option value="" rel="">January</option>
+						</select> 
+						<select class="country">
+							<option value="india">India</option>
+							<option value="usa">USA</option>
+						</select>
+					</div>
+				</div>
+				<nav class="custom-nav">
+					<div class="logo">
+						<div >
+							<button class="mobile-btn" onclick="toggle()"><i class="fas fa-bars fa-2x"></i></button>
+						</div>
+				        <a class="navbar-brand" href="#"><img src="images/TL-Logo.png"  width="200px" /></a>
+				    </div>
+				    <div class="menu-right">
+          
+			          <ul class="right-nav">
+			            <li class="nav-item">
+			              <a class="nav-link " href="#" >
+			                Membership
+			              </a>
+			            </li>
+			            <li class="nav-item">
+			              <a class="nav-link country" href="#" >
+			                Buyer Inquiries
+			              </a>
+			            </li>
+			            <li class="nav-item">
+			              <a class="nav-link country" href="#" >
+			                Categories 
+			              </a>
+			            </li>
+			            <li class="nav-item">
+			              <a class="nav-link country" href="#" >
+			                Post Inquiry
+			              </a>
+			             </li>
+			            <li class="nav-item">
+			              <a class="nav-link notifications" href="#" >
+			                <img src="images/bell.png" alt="bell">
+			              </a> 
+			              <span>3</span>
+			            </li>
+			            <li class="nav-item dropdown">
+						    <a href="javascript:void(0)" class="dropbtn"><img src="images/user.png"></a>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						</li>
+			          </ul>
+			        </div>
+			        <div class="menu-mobile">
+			        	<li class="nav-item dropdown">
+						    <a href="javascript:void(0)" class="dropbtn"><img src="images/user.png"></a>
+						    <div class="dropdown-content">
+						      <a href="#">Link 1</a>
+						      <a href="#">Link 2</a>
+						      <a href="#">Link 3</a>
+						    </div>
+						</li>
+			        </div>
+			        
+				</nav>
+				<div class="main-menu" id="mainMenu">
+			        	<ul class="main-right-nav">
+			            <li class="nav-item">
+			              <a class="nav-link " href="#" >
+			                Membership
+			              </a>
+			            </li>
+			            <li class="nav-item">
+			              <a class="nav-link country" href="#" >
+			                Buyer Inquiries
+			              </a>
+			            </li>
+			            <li class="nav-item">
+			              <a class="nav-link country" href="#" >
+			                Categories 
+			              </a>
+			            </li>
+			            <li class="nav-item">
+			              <a class="nav-link country" href="#" >
+			                Post Inquiry
+			              </a>
+			             </li>
+			         	</ul>
+			        </div>
+				<div class="nav-from">
+					<div class="input-filed">
+						<input type="text" name="productname" id="productname" placeholder="Please enter a product name" oninput="changeValidation()"/>
+					</div>	
+					<div class="select-product">
+						<select name="product" id="product" onchange="changeValidation()">
+						    <option value="product1">Product 1</option>
+						    <option value="product2">Product 2</option>
+						</select>
+					</div>
+					<div class="counterier">
+						<select id="selectCountery" class="select-countery" >
+						    <option value="india">India</option>
+						    <option value="usa">USA</option>
+						</select>
+					</div>
+					<div class="search-btn">
+						<button type="submit" id="submitButton" disabled="true"> <span></span>search	</button>
+					</div>
+				</div>
+			</header>
+			<!-- MAIN NAV ENDS HERE -->
+			<!-- BANNER ROW START -->
+			<div class="banner">
+				<div class="banner-bg">
+					<div class="banner-content">
+						
+						<h1 class="h1">	Suyog Enterprises</h1>
+
+						<h3 class="h3"><i class="fas fa-check-circle"></i>Verified Supplier</h3>
+					
+						<ul>
+							<li><a href="#" title="instagram" aria-label="instagram"><i class="fab fa-instagram fa-3x"></i></a></li>
+							<li><a href="#" title="facebook" aria-label="facebook"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+							<li><a href="#" title="twitter" aria-label="twitter"><i class="fab fa-twitter fa-3x"></i></a></li>
+							<li><a href="#" title="youtube" aria-label="youtube"><i class="fab fa-youtube fa-3x"></i></a></li>
+							<li><a href="#" title="linkedin" aria-label="linkedin"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- BANNER ROW END -->
+			<!-- TOP ROW START -->
+			<div class="top-row">
+				<div class="t-row-inner"> 
+					<div class="t-row-left">
+						<div class="t-row-left-titile">
+							<h3 class="h3">Company Details</h3>
+							<hr>
+						</div>
+						<div class="tabs">
+							<ul class="tabs-nav">
+							    <li><a href="#tab-1">Profile</a></li>
+							    <li><a href="#tab-2">Awards and Certificates</a></li>
+							    <li><a href="#tab-2">Contact details</a></li>
+							</ul>
+							<div class="tabs-stage">
+							    <div id="tab-1" class="tab-content">
+
+							      	<p class="p">SUYOG is an American company specializing in the manufacturing and refining of leather and related products. It is one of the oldest continuously running tanneries in the United States of America. Since its founding in the early 20th century it has been located in Chicago. 
+							      	</p>
+
+									<p class="p"> Arnold Horween (Chairman and President; 1949–84) and Ralph Horween, became executives of the company and worked in it after their careers as All American football players fo <a href="#">Read more</a></p>
+									<div class="stage-content">
+										<div class="content-inner">
+											<div>Type</div>
+											<div>Public</div>
+										</div>
+										<div class="content-inner">
+											<div>Industry</div>
+											<div>Leather tannery</div>
+										</div>	
+										<div class="content-inner">
+											<div>Established in</div>
+											<div>2010, 10 years ago</div>
+										</div>
+										<div class="content-inner">
+											<div>Number of employees</div>
+											<div>150 - 500</div>
+										</div>
+										<div class="content-inner">
+											<div>Revenue</div>
+											<div>US $5M (2019)</div>
+										</div>
+										<div class="content-inner">
+											<div>Tradeleaves ID</div>
+											<div>TD5656-SE</div>
+										</div>
+										<div class="content-inner">
+											<div>Website</div>
+											<div>http://SuyogEnterprises.com</div>
+										</div>
+										<div class="content-inner">
+											<div>Overall Rating</div>
+											<div>
+												<span><i class="fas fa-star"></i></span>
+												<span><i class="fas fa-star"></i></span>
+												<span><i class="fas fa-star"></i></span>
+												<span><i class="fas fa-star"></i></span>
+												<span><i class="fas fa-star"></i></span>
+											</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="t-row-right">
+						<div class="t-row-right-titile">
+							<h3 class="h3">Company Details</h3>
+							<hr>
+						</div>
+						<div class='some-page-wrapper'>
+						  	<div class='row'>
+						  		<div class="column">
+							      	<div class="card">
+									  <img class="card-img-top" src="images/woman-a-red-jacket.png" width="100%" alt="Card image cap">
+									  <div class="card-body">
+									    <div class="card-title">
+										  <div class="p-2">Flex item 1</div>
+										  <div class="p-2"><a href="#<a>"><i class="far fa-heart"></i></a></div>
+										</div>
+									    <p class="card-text p">
+									      $325.00 / piece
+									    </p>
+									    <p class="card-text p">
+									      200 pieces (Min. Order)
+									    </p>
+									    <div class="icons">
+											<div><a href="#" title="crosshairs" aria-label="crosshairs"><i class="far fa-crosshairs"></i></a></div>
+											<div><a href="#" title="envelope" aria-label="envelope"><i class="fal fa-envelope"></i></a></div>
+											<div><a href="#" title="star" aria-label="star"><i class="fas fa-star"></i></a></div>
+											<div><a href="#" title="comment" aria-label="comment"><i class="fas fa-comment-dots"></i></a></div>
+											<div><a href="#" title="cart" aria-label="cart"><i class="far fa-cart-plus"></i></a></div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="column">
+							      	<div class="card">
+									  <img class="card-img-top" src="images/black-jacket.png" width="100%" alt="Card image cap">
+									  <div class="card-body">
+									    <div class="card-title">
+										  <div class="p-2">Flex item 1</div>
+										  <div class="p-2"><i class="far fa-heart"></i></div>
+										</div>
+									    <p class="card-text p">
+									      $325.00 / piece
+									    </p>
+									    <p class="card-text p">
+									      200 pieces (Min. Order)
+									    </p>
+									     <div class="icons">
+											<div><a href="#" title="crosshairs" aria-label="crosshairs"><i class="far fa-crosshairs"></i></a></div>
+											<div><a href="#" title="envelope" aria-label="envelope"><i class="fal fa-envelope"></i></a></div>
+											<div><a href="#" title="star" aria-label="star"><i class="fas fa-star"></i></a></div>
+											<div><a href="#" title="comment" aria-label="comment"><i class="fas fa-comment-dots"></i></a></div>
+											<div><a href="#" title="cart" aria-label="cart"><i class="far fa-cart-plus"></i></a></div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="column">
+							      	<div class="card">
+									  <img class="card-img-top" src="images/brown-gloves.png" width="100%" alt="Card image cap">
+									  <div class="card-body">
+									    <div class="card-title">
+										  <div class="p-2">Flex item 1</div>
+										  <div class="p-2"><i class="far fa-heart"></i></div>
+										</div>
+									    <p class="card-text p">
+									      $325.00 / piece
+									    </p>
+									    <p class="card-text p">
+									      200 pieces (Min. Order)
+									    </p>
+									     <div class="icons">
+											<div><a href="#" title="crosshairs" aria-label="crosshairs"><i class="far fa-crosshairs"></i></a></div>
+											<div><a href="#" title="envelope" aria-label="envelope"><i class="fal fa-envelope"></i></a></div>
+											<div><a href="#" title="star" aria-label="star"><i class="fas fa-star"></i></a></div>
+											<div><a href="#" title="comment" aria-label="comment"><i class="fas fa-comment-dots"></i></a></div>
+											<div><a href="#" title="cart" aria-label="cart"><i class="far fa-cart-plus"></i></a></div>
+										</div>
+									  </div>
+									</div>
+								</div>
+								<div class="column">
+							      	<div class="card">
+									  <img class="card-img-top" src="images/bag.png" width="100%" alt="Card image cap">
+									  <div class="card-body">
+									    <div class="card-title">
+										  <div class="p-2">Flex item 1</div>
+										  <div class="p-2"><i class="far fa-heart"></i></div>
+										</div>
+									    <p class="card-text p">
+									      $325.00 / piece
+									    </p>
+									    <p class="card-text p">
+									      200 pieces (Min. Order)
+									    </p>
+									     <div class="icons">
+											<div><a href="#" title="crosshairs" aria-label="crosshairs"><i class="far fa-crosshairs"></i></a></div>
+											<div><a href="#" title="envelope" aria-label="envelope"><i class="fal fa-envelope"></i></a></div>
+											<div><a href="#" title="star" aria-label="star"><i class="fas fa-star"></i></a></div>
+											<div><a href="#" title="comment" aria-label="comment"><i class="fas fa-comment-dots"></i></a></div>
+											<div><a href="#" title="cart" aria-label="cart"><i class="far fa-cart-plus"></i></a></div>
+										</div>
+									  </div>
+									</div>
+								</div>
+						  	</div>
+						  	<div class="export-btn">
+						  		<button> Explore All Products</button>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- TOP ROW END -->
+			<!-- BOTTOM ROW START -->
+			<div class="bottom-row">
+				<div class="bottom-row-inner">
+					<div class="b-titile">
+						<h3 class="h3">Ratings and Reviews</h3>
+						<p class="p">
+							<a href="#">view all</a>
+						</p>
+					</div>
+					<div class="rating">
+						<div class="rating-text">
+							<h4 class="h4"><span class="font-size">4.0</span><span>out of 5 </span><span></span></span><span>1.2K Ratings</span></h4>
+						</div>
+						<div class="rating-grap">
+							<img src="images/all-stars-ratings.png" align="rating">
+						</div>
+					</div>
+					<div class="bottom-text">
+						
+							<p class=".p recent-view">Recent reviews:</p>
+						
+						
+							<p class=".p write-review"><a href="#"><i class="far fa-edit"></i>Write a review</a></p>
+						
+					</div>
+					<div class="bottom-card">
+						<div class="bottom-grid">
+							<div class="rating-star">
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star-4.png" /></span>
+							</div>
+							<div class="reviews">
+								<div>
+									<p class="p">	12th March 2020</p>
+								</div>
+								<div>
+									<p>John Doe</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>	CopyBest quality Products...really liked the Jacket</p>
+							</div>
+							<div class="message">
+								Excellent leather-coat for the price. It's actually much nicer than I expected.
+							</div>
+						</div>
+						<div class="bottom-grid">
+							<div class="rating-star">
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star-4.png" /></span>
+							</div>
+							<div class="reviews">
+								<div>
+									<p class="p">	12th March 2020</p>
+								</div>
+								<div>
+									<p>John Doe</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>	CopyBest quality Products...really liked the Jacket</p>
+							</div>
+							<div class="message">
+								Excellent leather-coat for the price. It's actually much nicer than I expected.
+							</div>
+						</div>
+						<div class="bottom-grid">
+							<div class="rating-star">
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star-4.png" /></span>
+							</div>
+							<div class="reviews">
+								<div>
+									<p class="p">	12th March 2020</p>
+								</div>
+								<div>
+									<p>John Doe</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>	CopyBest quality Products...really liked the Jacket</p>
+							</div>
+							<div class="message">
+								Excellent leather-coat for the price. It's actually much nicer than I expected.
+							</div>
+						</div>
+						<div class="bottom-grid">
+							<div class="rating-star">
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star.png" /></span>
+								<span><img src="images/Icon-star-4.png" /></span>
+							</div>
+							<div class="reviews">
+								<div>
+									<p class="p">	12th March 2020</p>
+								</div>
+								<div>
+									<p>John Doe</p>
+								</div>
+							</div>
+							<div class="comment">
+								<p>	CopyBest quality Products...really liked the Jacket</p>
+							</div>
+							<div class="message">
+								Excellent leather-coat for the price. It's actually much nicer than I expected.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- BOTTOM ROW END -->
+			<!-- FOOTER ROW START -->
+			<div class="footer">
+				<footer>
+					<div class="footer-inner">
+						<div class="buy-sell">
+							<h2 class="h2">BUY & SELL</h2>
+							<ul>
+								<li><a href="#">View Marketplace Categories</a></li>
+								<li><a href="#">Join Free</a></li>
+								<li><a href="#">Sign In</a></li>
+								<li><a href="#">Membership</a></li>
+								<li><a href="#">Our Professional Services</a></li>
+							</ul>
+						</div>
+						<div class="support">
+							<h2 class="h2">SUPPORT</h2>
+							<ul>
+								<li><a href="#">Blogs & Knowledge Base</a></li>
+								<li><a href="#">FAQs</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="company">
+							<h2 class="h2">COMPANY</h2>
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms of use & sale</a></li>
+							</ul>
+							<ul class="socialmedia-icon">
+							<li><a href="#" title="linkedin" aria-label="linkedin"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+							<li><a href="#" title="facebook" aria-label="facebook"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+							<li><a href="#" title="twitter" aria-label="twitter"><i class="fab fa-twitter fa-2x"></i></a></li>
+							
+						</ul>
+
+						</div>
+						<div class="footer-img">
+							<img src="images/TL-Logo.png" width="100%">
+							<p class="p">Business partners to grow your business. Global service providers to deliver the goods.</p>
+						</div>
+					</div>
+					<div class="">
+						<p>© TradeLeaves, Inc 2020</p>
+					</div>
+				</footer>
+			</div>
+			<!-- FOOTER ROW END -->
+		</div>
+		<!-- costom js-->
+	    <script src="js/main.js" ></script>
+	</body>
+</html>

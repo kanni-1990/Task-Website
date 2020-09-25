@@ -1,0 +1,24 @@
+*,body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, p, .p {
+  margin: 0;
+  padding: 0;
+  font-family: $primary-font;
+}
+.h2 {
+  color:$light-green;
+  @include for-tablet-up {
+    font-size: $display6-size;
+    font-weight: $display5-weight;
+    line-height: 2.4rem;
+  }
+}
